@@ -27,7 +27,7 @@ public class ProductController {
     }
 
     @Get
-    @Produces(MediaType.TEXT_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
     public Product product(HttpRequest<?> request, @QueryValue String mortgageId) {
         try {
             BusinessRules rules = new BusinessRules();
